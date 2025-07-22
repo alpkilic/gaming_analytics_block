@@ -1,7 +1,7 @@
-connection: "gaming_events"
+connection: "oredata_big_data_looker_dataset"
 
-include: "/*/*.view.lkml"                       # include all views in this project
-include: "/lookml_dashboards/*.dashboard.lookml"   # include a LookML dashboard called my_dashboard
+include: "/*/*.view"                       # include all views in this project
+include: "/lookml_dashboards/*.dashboard"   # include a LookML dashboard called my_dashboard
 
 # Model Configuration
 datagroup: events_raw { sql_trigger:  SELECT current_date  ;; }
