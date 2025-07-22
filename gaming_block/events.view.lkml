@@ -7,7 +7,11 @@ view: events {
 dimension_group: event { type:time sql: ${TABLE}.@{timestamp_field} ;;}
 dimension: user_id { type:string sql: ${TABLE}.@{user_id_field} ;; }
 dimension: event_name { type:string sql: ${TABLE}.@{event_name_field} ;; }
-dimension: country { type: string sql: ${TABLE}.@{country_field} ;;}
+dimension: country {
+    type: string
+    sql: ${TABLE}.@{country_field} ;;
+    map_layer_name: countries
+  }
 dimension: device_platform { type: string sql: ${TABLE}.@{platform_field} ;; }
 dimension: game_version { type: string sql: ${TABLE}.@{version_field} ;; }
 dimension: game_name { type: string sql: ${TABLE}.@{game_name_field} ;; }

@@ -1,10 +1,10 @@
 ## What table houses your events?
 constant: events_table {
-  value: "`se-pbl.gaming_demo_dev.raw_events`"
+  value: "`oredata-de-cirrus.gaming_analytics_block.raw_events`"
 }
-## When did the event occour?
+## When did the event occur?
 constant: timestamp_field {
-  value: "event"
+  value: "event_timestamp"
 }
 
 ## What country was the event fired from?
@@ -39,17 +39,15 @@ constant: event_name_field {
 
 ## What is name of the acquisition cost field?
 constant: acquisition_cost_field {
-  value: "install_cost"
+  value: "acquisition_cost"
 }
-
 
 ## What is name of the ad revenue field?
 constant: ad_revenue_field {
   value: "ad_revenue"
 }
 
-
-## What is name of the event field (i.e. start_match)?
+## What is name of the iap revenue field?
 constant: iap_revenue_field {
   value: "iap_revenue"
 }
