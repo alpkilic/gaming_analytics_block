@@ -29,7 +29,7 @@
     height: 2
   - title: Revenue
     name: Revenue
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: single_value
     fields: [events.total_revenue]
@@ -52,7 +52,7 @@
     height: 3
   - title: ARPDAU - Ads
     name: ARPDAU - Ads
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: single_value
     fields: [events.average_ad_revenue_per_user, events.event_date]
@@ -79,7 +79,7 @@
     height: 3
   - title: Revenue After UA
     name: Revenue After UA
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: looker_column
     fields: [events.event_date, events.total_revenue, events.total_install_spend]
@@ -150,7 +150,7 @@
     height: 4
   - title: Revenue after UA
     name: Revenue after UA
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: single_value
     fields: [events.total_revenue_after_UA]
@@ -173,7 +173,7 @@
     height: 3
   - title: ARPDAU - IAP
     name: ARPDAU - IAP
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: single_value
     fields: [events.average_iap_revenue_per_user, events.event_date]
@@ -203,7 +203,7 @@
     height: 3
   - title: IAP/Ad Revenue per Player
     name: IAP/Ad Revenue per Player
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: looker_column
     fields: [events.event_date, events.average_ad_revenue_per_user, events.average_iap_revenue_per_user]
@@ -271,7 +271,7 @@
     height: 4
   - title: LTV (0-7 days) Per Country
     name: LTV (0-7 days) Per Country
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: looker_column
     fields: [events.retention_day, events.average_revenue_per_user, events.cost_per_install,
@@ -395,7 +395,7 @@
     height: 11
   - title: "% Spenders"
     name: "% Spenders"
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: single_value
     fields: [events.percent_spenders]
@@ -419,7 +419,7 @@
     height: 2
   - title: Revenue Breadkdown
     name: Revenue Breadkdown
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: looker_bar
     fields: [events.total_iap_revenue, events.total_ad_revenue]
@@ -480,7 +480,7 @@
     height: 7
   - title: IAP Purchase Sizes
     name: IAP Purchase Sizes
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: looker_scatter
     fields: [events.iap_purchase_tier, events.total_iap_revenue, events.number_of_iap_purchases]
@@ -543,7 +543,7 @@
     height: 7
   - title: Transactions per Spender
     name: Transactions per Spender
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: single_value
     fields: [events.number_of_spenders, events.number_of_iap_purchases]
@@ -569,7 +569,7 @@
     height: 2
   - title: Retaining Spenders
     name: Retaining Spenders
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: looker_column
     fields: [events.retention_day, events.percent_spenders, events.total_iap_revenue]
@@ -635,7 +635,7 @@
     height: 5
   - title: Revenue per Ad Shown
     name: Revenue per Ad Shown
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: looker_map
     fields: [events.country, events.number_of_ads_shown, events.total_ad_revenue]
@@ -690,7 +690,7 @@
     height: 9
   - title: Revenue per Ad
     name: Revenue per Ad
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: single_value
     fields: [events.number_of_ads_shown, events.total_ad_revenue]
@@ -746,7 +746,7 @@
     height: 2
   - title: Ads Per Session
     name: Ads Per Session
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: single_value
     fields: [events.number_of_ads_shown, sessions.number_of_sessions]
@@ -810,7 +810,7 @@
     height: 2
   - title: Revenue by Network
     name: Revenue by Network
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: table
     fields: [events.number_of_ads_shown, events.total_ad_revenue, events.install_source]
@@ -889,7 +889,7 @@
     default_value: 30 days ago for 30 days
     allow_multiple_values: true
     required: false
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     listens_to_filters: []
     field: events.event_date
@@ -899,7 +899,7 @@
     default_value: device^_platform
     allow_multiple_values: true
     required: false
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     listens_to_filters: []
     field: events.drill_by
@@ -909,7 +909,7 @@
     default_value: ''
     allow_multiple_values: true
     required: false
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     listens_to_filters: []
     field: events.device_platform
@@ -919,7 +919,7 @@
     default_value: ''
     allow_multiple_values: true
     required: false
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     listens_to_filters: []
     field: events.install_source
@@ -929,7 +929,7 @@
     default_value: ''
     allow_multiple_values: true
     required: false
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     listens_to_filters: []
     field: events.country
@@ -939,7 +939,7 @@
     default_value: Lookerwood Farm
     allow_multiple_values: true
     required: false
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     listens_to_filters: []
     field: events.game_name

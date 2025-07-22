@@ -4,7 +4,7 @@
   elements:
   - title: New Tile
     name: New Tile
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: looker_line
     fields: [events.number_of_new_users, events.event_date, events.number_of_users]
@@ -67,7 +67,7 @@
     height: 7
   - title: Daily Active Users
     name: Daily Active Users
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: single_value
     fields: [events.number_of_users, events.event_date]
@@ -130,7 +130,7 @@
     height: 2
   - title: Revenue
     name: Revenue
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: single_value
     fields: [events.total_revenue]
@@ -153,7 +153,7 @@
     height: 3
   - title: ARPPU
     name: ARPPU
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: single_value
     fields: [events.average_revenue_per_spender]
@@ -178,7 +178,7 @@
     height: 3
   - title: New Tile (copy)
     name: New Tile (copy)
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: looker_line
     fields: [events.event_date, events.total_revenue, events.average_revenue_per_spender]
@@ -242,7 +242,7 @@
     height: 4
   - title: ROAS
     name: ROAS
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: single_value
     fields: [events.return_on_ad_spend]
@@ -269,7 +269,7 @@
     height: 3
   - title: Marketing Spend
     name: Marketing Spend
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: single_value
     fields: [events.total_install_spend]
@@ -294,7 +294,7 @@
     height: 3
   - title: UA Overview
     name: UA Overview
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: looker_line
     fields: [events.event_date, events.total_install_spend, events.return_on_ad_spend]
@@ -360,7 +360,7 @@
     height: 4
   - title: CPI (paid only)
     name: CPI (paid only)
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: single_value
     fields: [events.cost_per_install]
@@ -384,7 +384,7 @@
     height: 2
   - title: Install Sources
     name: Install Sources
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: table
     fields: [events.install_source, events.return_on_ad_spend, events.total_revenue,
@@ -467,7 +467,7 @@
     height: 3
   - title: Installs by Day
     name: Installs by Day
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: looker_line
     fields: [events.install_group, events.number_of_new_users, events.event_date]
@@ -528,7 +528,7 @@
     height: 7
   - title: Retention by Source
     name: Retention by Source
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: looker_line
     fields: [events.retention_day, events.number_of_new_users, events.number_of_users,
@@ -598,7 +598,7 @@
     height: 7
   - title: D7 Retention
     name: D7 Retention
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: single_value
     fields: [events.d7_retention_rate]
@@ -622,7 +622,7 @@
     height: 2
   - title: D1 Retention
     name: D1 Retention
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: single_value
     fields: [events.d1_retention_rate]
@@ -646,7 +646,7 @@
     height: 3
   - title: D14 Retention
     name: D14 Retention
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: single_value
     fields: [events.d14_retention_rate]
@@ -670,7 +670,7 @@
     height: 2
   - title: Campaign Types
     name: Campaign Types
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: table
     fields: [events.campaign_type, events.return_on_ad_spend, events.total_revenue,
@@ -753,7 +753,7 @@
     height: 4
   - title: "% New Paid Users"
     name: "% New Paid Users"
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: looker_donut_multiples
     fields: [events.install_group, events.number_of_new_users]
@@ -832,7 +832,7 @@
     height: 5
   - title: D1& D7 Retention
     name: D1& D7 Retention
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: looker_line
     fields: [events.d1_retention_rate, user_facts.player_first_seen_date, events.d7_retention_rate]
@@ -902,7 +902,7 @@
     height: 7
   - title: LTV (0-30 days)
     name: LTV (0-30 days)
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: looker_area
     fields: [events.retention_day, events.average_ad_revenue_per_user, events.average_iap_revenue_per_user]
@@ -994,7 +994,7 @@
     height: 6
   - title: "% Spenders"
     name: "% Spenders"
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: single_value
     fields: [events.percent_spenders]
@@ -1018,7 +1018,7 @@
     height: 6
   - title: Revenue Breadkdown
     name: Revenue Breadkdown
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: looker_bar
     fields: [events.total_iap_revenue, events.total_ad_revenue]
@@ -1079,7 +1079,7 @@
     height: 6
   - title: Daily Installs
     name: Daily Installs
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     type: single_value
     fields: [events.event_date, events.number_of_new_users]
@@ -1112,7 +1112,7 @@
     default_value: 30 days ago for 30 days
     allow_multiple_values: true
     required: false
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     listens_to_filters: []
     field: events.event_date
@@ -1122,7 +1122,7 @@
     default_value: device^_platform
     allow_multiple_values: true
     required: false
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     listens_to_filters: []
     field: events.drill_by
@@ -1132,7 +1132,7 @@
     default_value: ''
     allow_multiple_values: true
     required: false
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     listens_to_filters: []
     field: events.device_platform
@@ -1142,7 +1142,7 @@
     default_value: ''
     allow_multiple_values: true
     required: false
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     listens_to_filters: []
     field: events.install_source
@@ -1152,7 +1152,7 @@
     default_value: ''
     allow_multiple_values: true
     required: false
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     listens_to_filters: []
     field: events.country
@@ -1162,7 +1162,7 @@
     default_value: Lookerwood Farm
     allow_multiple_values: true
     required: false
-    model: gaming
+    model: gaming_analytics_block
     explore: events
     listens_to_filters: []
     field: events.game_name
