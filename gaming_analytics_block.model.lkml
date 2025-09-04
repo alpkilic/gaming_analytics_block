@@ -4,7 +4,9 @@ include: "/*/*.view"                       # include all views in this project
 include: "/lookml_dashboards/*.dashboard"   # include a LookML dashboard called my_dashboard
 
 # Model Configuration
-datagroup: events_raw { sql_trigger: SELECT 1 ;; }
+datagroup: events_raw {
+  sql_trigger: SELECT 1 ;;
+  max_cache_age: "24 hours"}
 named_value_format: large_usd { value_format: "[>=1000000]\"$\"0.00,,\"M\";[>=1000]\"$\"0.00,\"K\";\"$\"0.00" }
 named_value_format: large_number { value_format: "[>=1000000]0.00,,\"M\";[>=1000]0.00,\"K\";0" }
 
