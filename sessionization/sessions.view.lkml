@@ -2,6 +2,7 @@
 # Session pattern from https://stackoverflow.com/a/55116882/1108832
 datagroup: sessions {
   sql_trigger: select 1 ;;
+  max_cache_age: "24 hours"
 }
 view: last {
   derived_table: {
